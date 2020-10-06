@@ -1,0 +1,16 @@
+<html>
+
+<head>
+    <title>Home Page</title>
+</head>
+
+<body>
+    <h1>Hello Ali</h1>
+    <h3>{{var_to_javascript}}</h3>
+    <input type="hidden" value="{{var_to_javascript}}" id="var">
+</body>
+{%block scripts%}
+<script src="{{url_for('static', filename='index.js')}}"></script>
+{% endblock %}
+
+</html>
